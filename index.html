@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="todo1.css" rel="stylesheet">
+</head>
+<body>
+    <main>
+    <div class="task">
+       <center><h1>Task Manager</h1></center>
+        <input type="text" id="task-input" autofocus placeholder="Add a Task...">
+        <button  id="add" onclick="addTask()">Add Task</button>
+        <div class="filter-options">
+            <button onclick="filterTasks(true)">Completed Tasks</button>
+            <button onclick="filterTasks(false)">Incomplete Tasks</button>
+            <button onclick="renderTasks()">All Tasks</button>
+        </div>
+        <div class="inputs">
+        <ul id="task-list"></ul></div>
+    </div>
+    </main>
+    <script src="todo.js"></script>
+    
+</body>
+</html>
